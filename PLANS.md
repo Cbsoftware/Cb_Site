@@ -150,12 +150,15 @@ Templating and Template Tags
 Templates are applied using a specific to generic naming hierarchy, looking for [slug].html before [taxonomy].html. For example, if we have a page with the slug "about", the template system first looks for "about.html". If that's not found, it looks for "page.html".
 
 Template tags are used to display information contained in the post objects. For example, the title of a news post, for which the tag might look like:
+
 	<#title>
 
 Template tags will also be used to call sub-taxonomy lists or archives into the template, as well as define an optional template to use to display those sub-taxonomies. For example, on a software page there'll be a history sub-tax. A template tag for this might look like:
+
 	<#tax="history">
 	
 This would display all the history posts associated with this post and display them using the history template.	If we'd like to list the five latest news posts with a special template, the template tag might look like:
+
 	<#tax="news" limit="5" template="front-news">
 
 
@@ -163,12 +166,16 @@ Alternate posting systems
 -------------------------
 The primary method of posting content to the site will be through the site's admin panel. For simpler posts, namely status posts and perhaps blog posts, a few faster methods may be appropriate.
 
-###Posting inline - Posting directly on the site, if logged in. A link would be made available somewhere near the latest posts allowing you to immediately add and publish a post to the site.
+###Posting inline
+Posting directly on the site, if logged in. A link would be made available somewhere near the latest posts allowing you to immediately add and publish a post to the site.
 
-###Command line - posting from the command line, using a simple command. Status posts would be one line with only one value to fill, e.g.:
+###Command line
+posting from the command line, using a simple command. Status posts would be one line with only one value to fill, e.g.:
+
 	cb new status "I'm making up a whole new CMS RIGHT NOW!"
 
 Blog posts would be a bit more complicated, e.g.:
+
 	cb new blog title="This is the Title", content="This is a blog post. It's not too long, nor very complicated, but it's more elaborate than status update, and likely more valuable information-wise."
 
 
