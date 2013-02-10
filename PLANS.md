@@ -38,7 +38,7 @@ o - represents an optional value
 b - represents a boolean value
 s - represents a sub-taxonomy
 
-	###software
+###software
 		id		- a u
 		media	- a s o - a list of media connected to this post
 		slug	- a - url friendly version of title
@@ -52,12 +52,12 @@ s - represents a sub-taxonomy
 		buy		- o - url to the download or purchase page (Google Play, App Store, etc.)
 		icon	- o - a 512 x 512 image .png or .svg
 
-		###history
+###history
 			id		- a u
 			version	- u - the version the description belongs to
 			content - list of changes made, separated by asterisks
 
-	###news
+###news
 		id		- a u
 		date	- a
 		media	- a s o - csv of media connected to this post
@@ -66,7 +66,7 @@ s - represents a sub-taxonomy
 		content	-
 		publish	- b - false is a draft, true is publicly visible
 
-	###blog
+###blog
 		id		- a u
 		date	- a
 		author	- a
@@ -77,20 +77,20 @@ s - represents a sub-taxonomy
 		category- s o - csv of categories for sorting blog content
 		publish	- b - false is a draft, true is publicly visible
 
-		###category
+###category
 			id		- a u
 			slug	- a - url friendly version of title
 			title	-
 			content - o - a description of content fitting this category
 			link	- a - csv of blog posts in this category
 
-	###status
+###status
 		id		- a u
 		date	- a
 		author	- a
 		content	- restricted to 130 characters
 
-	###press
+###press
 		id		- a u
 		date	- a
 		slug	- a - url friendly version of title
@@ -100,7 +100,7 @@ s - represents a sub-taxonomy
 		journal	- the name of the company publishing the article
 		category- s - mention, article, interview, audio, video
 
-	###experiment
+###experiment
 		id		- a u
 		date	- a
 		media	- a s o - csv of media connected to this post
@@ -108,7 +108,7 @@ s - represents a sub-taxonomy
 		slug	- a - url friendly version of title
 		title	- 
 
-	###page
+###page
 		id		- a u
 		media	- a s o - csv of media connected to this post
 		slug	- a - url friendly version of title
@@ -116,14 +116,14 @@ s - represents a sub-taxonomy
 		content	- o -
 		archive	- o - title of taxonomy this page will be used as an archive for
 
-	###media
+###media
 		id		- a u
 		type	- a - MIME type
 		url		- a - url to the media
 		title	- o -
 		content	- o - description or caption for the media
 
-	###user
+###user
 		id		- a u
 		slug	- a - url friendly version of nickname
 		email	- u - user's e-mail address, used as username
