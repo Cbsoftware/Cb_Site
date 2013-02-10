@@ -8,10 +8,10 @@ A lightweight CMS specially constructed to handle Cb's needs, and expanded when 
 
 Functional Needs
 ----------------
-new 	- make new things
-edit	- edit existing things
-upload	- upload media
-delete	- delete anything by id
+* new		- make new things
+* edit		- edit existing things
+* upload	- upload media
+* delete	- delete anything by id
 
 
 Taxonomies
@@ -32,11 +32,11 @@ Numerous "taxonomies" or "post-types" will be needed to display the appropriate 
 
 Each of these taxonomies has its own set of necessary and optional values. The one common value is the id. Following is a break down of the taxonomies and their values. Value are considered necessary unless marked otherwise:
 
-u - represents a unique value
-a - represents an automatically filled value
-o - represents an optional value
-b - represents a boolean value
-s - represents a sub-taxonomy
+* u - represents a unique value
+* a - represents an automatically filled value
+* o - represents an optional value
+* b - represents a boolean value
+* s - represents a sub-taxonomy
 
 ###software
 		id		- a u
@@ -142,6 +142,7 @@ Possibilities for later taxonomies:
 	forum		- can contain other forums, as well as posts
 		for_post- forum post
 	ticket		- issue-tracking ticket
+	project		- project management
 
 
 Templating and Template Tags
@@ -162,12 +163,12 @@ Alternate posting systems
 -------------------------
 The primary method of posting content to the site will be through the site's admin panel. For simpler posts, namely status posts and perhaps blog posts, a few faster methods may be appropriate.
 
-	Posting inline - Posting directly on the site, if logged in. A link would be made available somewhere near the latest posts allowing you to immediately add and publish a post to the site.
+###Posting inline - Posting directly on the site, if logged in. A link would be made available somewhere near the latest posts allowing you to immediately add and publish a post to the site.
 
-	Command line - posting from the command line, using a simple command. Status posts would be one line with only one value to fill, e.g.:
-		cb new status "I'm making up a whole new CMS RIGHT NOW!"
+###Command line - posting from the command line, using a simple command. Status posts would be one line with only one value to fill, e.g.:
+	cb new status "I'm making up a whole new CMS RIGHT NOW!"
 
-		Blog posts would be a bit more complicated, e.g.:
-		cb new blog title="This is the Title", content="This is a blog post. It's not too long, nor very complicated, but it's more elaborate than status update, and likely more valuable information-wise."
+Blog posts would be a bit more complicated, e.g.:
+	cb new blog title="This is the Title", content="This is a blog post. It's not too long, nor very complicated, but it's more elaborate than status update, and likely more valuable information-wise."
 
 
